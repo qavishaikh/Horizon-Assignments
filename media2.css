@@ -1,0 +1,93 @@
+/* Global styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header, footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Small devices (phones, less than 600px) */
+@media screen and (max-width: 599px) {
+    header, footer {
+        padding: 20px 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (tablets, 600px to 1199px) */
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+    header, footer {
+        padding: 15px 0;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    header, footer {
+        padding: 10px 0;
+    }
+
+    .container {
+        width: 60%;
+    }
+
+    .content {
+        font-size: 18px;
+    }
+}
+
+/* Landscape orientation */
+@media screen and (orientation: landscape) {
+    body {
+        background-color: #e0f7fa;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #eee;
+    }
+
+    .content {
+        background-color: #444;
+    }
+
+    header, footer {
+        background-color: #333;
+    }
+}

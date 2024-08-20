@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System with Prompt</title>
+</head>
+<body>
+    <h1>Grading System</h1>
+    
+    
+    <h2 id="result"></h2>
+
+    <script>
+            // Prompt user to enter marks
+            const maths = +prompt("Enter Maths marks: ");
+            const science = +prompt("Enter Science marks: ");
+            const english = +prompt("Enter English marks: ");
+            marks = maths + science + english;;
+
+            // Check if any input is invalid
+            // if (isNaN(maths) || isNaN(science) || isNaN(english)) {
+            //     alert("Please enter valid marks for all subjects.")
+            // }
+
+                if (marks >= 90 && marks <= 100) {
+                    // return 'A';
+                    console.log("A1 Grade", marks)
+                } else if (marks >= 80 && marks < 90) {
+                    console.log("A Grade", marks)
+
+                } else if (marks >= 70 && marks < 80) {
+                    console.log("B Grade", marks)
+
+                } else if (marks >= 60 && marks < 70) {
+                    console.log("C Grade", marks)
+
+                } else {
+                    console.log("D Grade", marks)
+
+                }
+    </script>
+</body>
+</html>

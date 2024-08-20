@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            width: 100%;
+            height: 500px;
+            text-align: center;
+        }
+        .box1{
+            width: 30%;
+            height: 300px;
+            background-color: yellow;
+        }
+        .box2{
+            width: 30%;
+            height: 300px;
+            background-color: pink;
+        }
+        .box3{
+            width: 30%;
+            height: 300px;
+            background-color: lightblue;
+        }
+        @media (max-width:700px) {
+            body{
+                background-color:pink;
+            }
+            .main{
+                flex-wrap: wrap;
+            }
+            .box1{
+                width: 50%;
+                flex-wrap: 1;
+            }
+            .box2{
+                width: 50%;
+            }
+            .box3{
+                width: 50%;
+            }
+        }
+        @media (max-width:600px) {
+            body{
+                background-color:red;
+            }
+            .main{
+                flex-wrap: wrap;
+            }
+            .box1{
+                width: 50%;
+                flex-wrap: 1;
+            }
+            .box2{
+                width: 50%;
+            }
+            .box3{
+                width: 50%;
+            }
+        }
+        @media (max-width:500px) {
+            body{
+                background-color:black;
+            }
+            .main{
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+            .box1{
+                width: 100%;
+            }
+            .box2{
+                width: 100%;
+            }
+            .box3{
+                width: 100%;
+            }
+        }
+        @media (max-width:400px) {
+            body{
+                background-color:green;
+            }
+            .main{
+                flex-direction: column;
+            }
+            .box1{
+                width: 100%;
+            }
+            .box2{
+                width: 100%;
+            }
+            .box3{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">Qavi Shaikh</div>
+        <div class="box2">Qavi Shaikh</div>
+        <div class="box3">Qavi Shaikh</div>
+    </div>
+</body>
+</html>
